@@ -1,5 +1,6 @@
 
 'use client'
+import Aside from "@/component/Aside"
 import { useSession, signIn, signOut } from "next-auth/react"
 
 
@@ -8,8 +9,17 @@ export default function Home() {
   if (session) {
     return (
       <>
-        Signed in as {session.user.email} <br />
+        <section className="w-[1000px] m-auto flex flex-col">
+          <header className="flex justify-between w-[1000px] m-auto py-8 ">
+          <div>
+          hi {session.user.email}
+          </div>
         <button onClick={() => signOut()}>Sign out</button>
+          </header>
+          <div>
+            <Aside />
+          </div>
+        </section>
       </>
     )
   }
