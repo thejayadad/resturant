@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -60,6 +61,7 @@ const Register = () => {
         />
         <button type="submit">Register</button>
       </form>
+      <p>Already Have An Account <span><Link href={'/login'}>Login</Link></span></p>
     </section>
   )
 }
