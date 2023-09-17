@@ -21,7 +21,7 @@ const FeaturedItem = () => {
       };
     }, []);
   return (
-    <section className='flex flex-col w-full bg-purple-100 p-8'>
+    <section className='flex flex-col w-full p-8'>
     <h2 className='text-center'>Featured Items</h2>
     <div
       className={`flex flex-wrap gap-6 w-screen md:flex-row  ${
