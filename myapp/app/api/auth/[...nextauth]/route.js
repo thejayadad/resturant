@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { signJwtToken } from "@/lib/jwt";
+import { signJwtToken } from "../../../../utils/jwt.js";
 import bcrypt from 'bcrypt'
 import User from "@/models/User";
 import db from "../../../../utils/db.js"
