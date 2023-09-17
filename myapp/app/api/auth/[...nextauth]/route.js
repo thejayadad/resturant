@@ -3,7 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import { signJwtToken } from "@/lib/jwt";
 import bcrypt from 'bcrypt'
 import User from "@/models/User";
-import db from "@/lib/db";
+import db from "../../../../utils/db.js"
 
 
 const handler = NextAuth({
